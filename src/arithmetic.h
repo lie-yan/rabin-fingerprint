@@ -75,7 +75,7 @@ P gcd (P a, P b) {
 template <typename P, typename N>
 P reduce_exponent (N p, const P& m) {
   auto r = X<P>;
-  while (p-- > 0) r = (r * r) % m;
+  for (; p > 0; --p) r = (r * r) % m;
   return (r - X<P>) % m;
 }
 

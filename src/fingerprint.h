@@ -39,7 +39,6 @@ public:
   FingerprintGenerator& operator = (const FingerprintGenerator&) = default;
   FingerprintGenerator& operator = (FingerprintGenerator&&) = default;
 
-  // return (fingerprint generator, initial fingerprint) pair
   /**
    * @brief Creates a fingerprint generator and the initial fingerprint.
    * @return (fingerprint generator, initial fingerprint) pair
